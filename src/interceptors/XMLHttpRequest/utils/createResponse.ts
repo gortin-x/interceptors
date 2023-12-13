@@ -29,7 +29,7 @@ export function createResponse(
 
 function createHeadersFromXMLHttpReqestHeaders(headersString: string): Headers {
   const headers = new Headers()
-
+  console.log("??????");
   const lines = headersString.split(/[\r\n]+/)
   for (const line of lines) {
     if (line.trim() === '') {
